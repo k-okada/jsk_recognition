@@ -64,9 +64,16 @@ Parameters
 Example
 -------
 
+Example code with `hand_pose_estimation_2d.bag` file.
 .. code-block:: bash
 
    roslaunch jsk_perception sample_hand_pose_estimation_2d.launch gpu:=0
+
+If you prefer to test hand_pose_estimation on GPU-less computer, but have a usb camera. Try.
+
+.. code-block:: bash
+
+   roslaunch jsk_perception sample_hand_pose_estimation_2d.launch gpu:=-1 use_usb_cam:=true
 
 
 Reference
